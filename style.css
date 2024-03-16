@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+
+    --Dark-Slate-Grey: hsl(234, 29%, 20%);
+    --Charcoal-Grey: hsl(235, 18%, 26%);
+    --Grey: hsl(231, 7%, 60%);
+    --White: hsl(0, 0%, 100%);
+    --Tomato: hsl(4, 100%, 67%);
+}
+
+
+body {
+
+    font-family: "Roboto";
+    font-weight: 400;
+    min-height: 97vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Dark-Slate-Grey);
+    padding:1rem;
+}
+
+
+main {
+
+    display:flex;
+    width: 100%;
+    justify-content: center;
+  
+}
+
+.main-container {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    background-color: var(--White);
+   padding:2rem;
+    border-radius: 1rem;
+
+}
+
+.subscribe-section {
+
+   width: 60%;
+    
+}
+
+
+
+.image-section {
+
+    width: 40%;
+}
+
+.image-section img {
+
+    width: 100%;
+}
+
+
+.subscribe-section h1 {
+
+    margin-top:0.8rem;
+    font-size:2.8rem;
+}
+
+
+.list {
+    list-style-image:url(./assets/images/icon-success.svg);
+    font-size:0.7rem;
+    font-weight: 500;
+    list-style-type: none;
+    
+}
+
+.list li {
+    
+    padding:10px;
+    font-size:0.9rem;
+}
+
+
+
+.subscribe-section {
+
+    display:block;
+}
+
+
+.input-section {
+
+    display:flex;
+    flex-direction: column;
+    width:85%;
+    margin:1rem;
+}
+
+.input-section input {
+
+    padding:10px 20px;
+    border-radius: 5px;
+    font-family: inherit;
+    border:none;
+    outline:none;
+    border:1px solid var(--Grey);
+    margin-top:1rem;
+    background-color: var(--White);
+}
+
+
+.input-section label {
+
+    font-weight: 500;
+}
+
+.main-btns {
+    font-family: inherit;
+    margin-top:1.5rem;
+    padding:0.9rem;
+    border-radius: 5px;
+    border:none;
+    background-color: var(--Dark-Slate-Grey);
+    color:white;
+}
+
+.main-btns:hover {
+    cursor:pointer;
+    background-color: var(--Tomato);
+    transform:scale(1.01);
+    transition:100ms;
+    box-shadow:0 0 10px var(--Tomato);
+}
+
+
+.thanks-section {
+
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    background-color: white;
+    border-radius: 1rem;
+   padding:2rem;
+   width: 350px;
+
+}
+
+.thanks-section img {
+
+    width:45px;
+}
+
+.thanks-section button {
+
+    width: 100%;
+}
+
+.thanks-section h1 {
+
+    font-size:2.5rem;
+}
+
+.hide {
+
+    display:none;
+    
+}
+
+.error {
+    font-size: 1rem;
+    color:red;
+    align-self: start;
+    margin-top:10px;
+    display:none;
+    
+}
+
+input::placeholder {
+
+    color:red;
+    
+}
+
+.input-red::placeholder {
+
+    color:var(--Grey);
+    
+}
+
